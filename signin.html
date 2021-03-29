@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/login.css">
+<body>
+
+<header class="w3-container w3-teal">
+  <h1>Sign Up</h1>
+</header>
+
+<div class="w3-container w3-half w3-margin-top w3-container w3-card-4">
+
+<form method="post" action="signin.php">
+
+	<p>
+	<input class="w3-input" type="text" name="name" style="width:90%" required>
+	<label>Name</label></p>
+	<p>
+	<input class="w3-input" type="text" name="surname" style="width:90%" required>
+	<label>Surname</label></p></br>
+	
+	<div class="gender">
+		<input type="radio" name="gender" value="male">
+		<label>Male</label>
+		<input type="radio" name="gender" value="male">
+		<label>Female</label>
+		<input type="radio" name="gender" value="male">
+		<label>Other</label>
+	</div>
+	
+	<p>
+	<input class="w3-input" type="text" name="surname" style="width:90%" required>
+	<label>Country</label></p>
+	<input class="w3-input" type="text" name="email" style="width:90%" required>
+	<label>Email</label></p>
+	<p>
+	<input class="w3-input" type="password" name="password" style="width:90%" required>
+	<label>Password</label></p>
+	<p>
+	<input class="w3-input" type="password" name="password" style="width:90%" required>
+	<label>Confirm Password</label></p>
+	
+	<button class="w3-button w3-section w3-teal w3-ripple"> Sign up </button>
+	</p>
+	
+</form>
+
+</div>
+
+</body>
+<script> 
+var queryString = window.location.search;
+var urlParams = new URLSearchParams(queryString);
+var product = urlParams.get('login');
+  if(product == 'false'){
+	document.getElementsByClassName('errorDiv')[0].style.display='block'
+  }
+</script>
+</html> 
+
