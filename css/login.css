@@ -24,6 +24,11 @@ button.w3-button.w3-section.w3-teal.w3-ripple {
     border-radius: 30px;
 }
 
+button.w3-button.w3-section.w3-teal.w3-ripple.actors {
+    background-color: #808000!important;
+    color: white!important;
+}
+
 button.w3-button.w3-section.w3-teal.w3-ripple.singin {
     background-color: #ccc!important;
     color: white !important;
